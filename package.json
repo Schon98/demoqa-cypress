@@ -1,0 +1,11 @@
+{
+  "name": "demoqa-cypress",
+  "version": "1.0.0",
+  "main": "\t",
+  "author": "Matheus Schon",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.6.4",
+    "global": "^4.4.0"
+  }
+}
