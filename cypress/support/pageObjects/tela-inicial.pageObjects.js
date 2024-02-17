@@ -1,4 +1,5 @@
 const elem = require('../elements/tela-inicial.elements').ELEMENTS 
+<<<<<<< HEAD
 const concluirItem = require('../elements/tela-inicial.elements').ITENS
 const filtrarItem = require('../elements/tela-inicial.elements').FILTROS
 
@@ -45,6 +46,12 @@ class telaInicial{
         .find('button')
         .invoke('show')
         .click()
+=======
+
+class telaInicial{
+    inputText(){
+        cy.get(elem.inputTodo).type("Matheus")
+>>>>>>> 760b585902ebe0d1c9960fa15f5e9fb4ecca01d7
     }
 }
 

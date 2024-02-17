@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 import telaInicial from "../../support/pageObjects/tela-inicial.pageObjects";
+=======
+import telaInicial from  '../support/pageObjects/telaInicial.pageObjects'
+>>>>>>> 760b585902ebe0d1c9960fa15f5e9fb4ecca01d7
 
 describe('Adicionar um item no todo', () => {
 
@@ -9,6 +13,7 @@ describe('Adicionar um item no todo', () => {
    })
 
    it('Adicionar um item na lista', () => {
+<<<<<<< HEAD
     telaInicial.inputText('dado 1')
     telaInicial.inputText('dado 2')
 
@@ -22,5 +27,10 @@ describe('Adicionar um item no todo', () => {
           telaInicial.inputText(item)
        })
    });
+=======
+    telaInicial.inputText()
+})
+
+>>>>>>> 760b585902ebe0d1c9960fa15f5e9fb4ecca01d7
     
 });
