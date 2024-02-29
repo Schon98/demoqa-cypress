@@ -1,7 +1,7 @@
 
 import telaInicial from "../../support/pageObjects/tela-inicial.pageObjects";
 
-describe('deletar itens da lista', () => {
+describe('Concluir itens na lista de to-do', () => {
 
    beforeEach(() =>{
         cy.visit('/')
@@ -10,17 +10,13 @@ describe('deletar itens da lista', () => {
         todoItens.forEach(function(item, indice, array){
             telaInicial.inputText(item)
 
-            if (indice < array.length - 1) {
-                cy.get('input.new-todo[autofocus]').type('{enter}');
-            }
-
         })
 
    })
 
-   it('exclusão de um item da lista', () => {
+   it('Adicionar um item na lista', () => {
     
-    telaInicial.deletarItem()
-})
+    telaInicial.concluirItem()
 
+})
 });
